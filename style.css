@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Unbounded';
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.button{
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    height: 28px;
+    width: 120px;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px grey;
+
+}
+.button:hover{
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* html{
+    background-color: black;
+    color: white;
+} */
+
+body{
+    max-width: 1200px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+section{
+    margin-top: 100px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: solid 1px black;
+}
+
+#intro{
+    margin-bottom: 50px;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.contact_logo{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.contact_logo:hover{
+    transform: scale(1.2);
+}
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin: 5px;
+    text-align: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.project{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    font-size: 14px;
+    box-shadow: 10px 10px 10px grey;
+    transition: 0.5s;
+}
+
+.project_img{
+    height: 300px;
+    width: 350px;
+}
+
+.project_description{
+    margin: 2%;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px lightskyblue;
+
+}
+
+@media (min-width: 500px){
+    #s2,#s4{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 900px){
+    #projects{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    .project{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 380px;
+        height: 550px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
